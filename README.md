@@ -21,3 +21,13 @@ run the tests will pass and the snapshots will be updated
 ```bash
 $ pnpx playwright test --update-snapshots
 ```
+
+debug the test
+```bash
+$ pnpx playwright test --debug
+```
+
+codegen the test
+```bash
+$ pnpx playwright codegen -o test/demo.spec.ts
+```
