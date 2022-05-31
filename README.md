@@ -16,3 +16,8 @@ run the tests with the `playwright` package
 ```bash
 $ pnpm run test
 ```
+
+run the tests will pass and the snapshots will be updated
+```bash
+$ pnpx playwright test --update-snapshots
+```
