@@ -38,12 +38,12 @@ jobs:
         with:
           node-version: '14.x'
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
       - name: Install Playwright
-        run: pnpx playwright install --with-deps
+        run: npx playwright install --with-deps
       # Update the snapshots
       - name: Update snapshots
-        run: pnpx playwright test --update-snapshots --reporter=list
+        run: npx playwright test --update-snapshots --reporter=list
       # Commit the changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
