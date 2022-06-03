@@ -37,8 +37,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14.x'
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
       - name: Install Playwright
         run: npx playwright install --with-deps
       # Update the snapshots
